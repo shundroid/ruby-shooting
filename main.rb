@@ -1,13 +1,16 @@
 require "curses"
 
 require "./screenManager"
-require "./unit"
+require "./units/playerUnit"
+require "./units/monsterUnit"
 require "./asciiArts"
 
 screenManager = ScreenManager.new
-unit = Unit.new 5, 5, $asciiArts["UFO"]
+player = PlayerUnit.new 0, 0
+monster = MonsterUnit.new 100, 2, $asciiArts["Bird"]
 
-screenManager.addUnit unit
+screenManager.addUnit player
+screenManager.addUnit monster
 screenManager.draw
 
 Curses.getch

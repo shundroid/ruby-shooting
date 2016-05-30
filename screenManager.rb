@@ -18,7 +18,6 @@ class ScreenManager
     end
   end
   def close
-    Curses.close
     Curses.close_screen
   end
 end
