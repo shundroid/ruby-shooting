@@ -1,4 +1,10 @@
 $asciiArts = {}
+
+$asciiArts["Player"] = [
+  "  / O \\",
+  "<=======>"
+].join("\n")
+
 $asciiArts["UFO"] = [
   "   _________",
   "  /         \\",
